@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --buttonsColor: #F5F5F5;
+    --darkBlackColor: #2B100B;
+    --whiteColor: #FFFFFF;
+    --red: #9B0000;
+    --black: #000;
+}
+
+body {
+    background-color: var(--whiteColor);
+}
+
+nav {
+    width: 80vw;
+    text-transform: uppercase;
+    margin: auto;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+}   
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navList li:hover {
+    border-bottom: 2px solid var(--buttonsColor);
+}
+
+.navList a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#navName {
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+#navName:hover {
+    border-bottom: none;
+}
+
+.container, .tasksContainer {
+    background-color: #FFFFFF;
+    color: var(--darkBlackColor);
+    font-family: 'Merriweather', serif;
+    width: 65%;
+    margin: auto;
+    margin-top: 3rem;
+    border: 2px solid var(--buttonsColor);
+    border-radius: .5rem;
+    padding: .5rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 1em 0;
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: var(--buttonsColor);
+    border: 1px solid var(--whiteColor);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 300;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+    font-family: 'Chivo Mono', monospace;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--whiteColor);
+    background-color: var(--black);
+    transition-property: background-color, color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+input, label {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    transition-property: text-decoration;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+.inputSpecMargin {
+    margin: 0 0.2em;
+    padding: 0;
+}
+
+.newTasksDiv {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasksDiv {
+    margin: 0.5rem 0;
+}
+
+.checkedCheckbox {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
